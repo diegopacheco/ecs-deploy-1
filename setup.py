@@ -8,10 +8,10 @@ from ecs_deploy import VERSION
 dependencies = ['click', 'botocore', 'boto3>=1.4.7', 'future', 'requests']
 
 setup(
-    name='ecs-deploy',
+    name='ecs-deploy-ndt',
     version=VERSION,
-    url='https://github.com/fabfuel/ecs-deploy',
-    download_url='https://github.com/fabfuel/ecs-deploy/archive/%s.tar.gz' % VERSION,
+    url='https://github.com/diegopacheco/ecs-deploy-1',
+    download_url='https://github.com/diegopacheco/ecs-deploy-1/archive/%s.tar.gz' % VERSION,
     license='BSD',
     author='Fabian Fuelling',
     author_email='pypi@fabfuel.de',
