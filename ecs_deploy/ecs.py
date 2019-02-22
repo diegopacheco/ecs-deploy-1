@@ -3,7 +3,7 @@ from datetime import datetime
 from boto3.session import Session
 from botocore.exceptions import ClientError, NoCredentialsError
 from dateutil.tz.tz import tzlocal
-
+import time
 
 class EcsClient(object):
     def __init__(self, access_key_id=None, secret_access_key=None,
@@ -383,6 +383,7 @@ class EcsAction(object):
         return new_task_definition
 
     def deregister_task_definition(self, task_definition):
+        time.sleep(120)
         self._client.deregister_task_definition(task_definition.arn)
 
     def update_service(self, service):

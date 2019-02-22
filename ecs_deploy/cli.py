@@ -278,6 +278,7 @@ def create_task_definition(action, task_definition):
 
 def deregister_task_definition(action, task_definition):
     click.secho('Deregister task definition revision')
+    click.secho('Sleeping for 2 minutes(120 seconds)... ')
     action.deregister_task_definition(task_definition)
     click.secho(
         'Successfully deregistered revision: %d\n' % task_definition.revision,
